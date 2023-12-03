@@ -1,0 +1,440 @@
+#global_header {
+  width: 100%;
+  height: 105px;
+  background-color: #171d25;
+  background-position: center top;
+}
+
+#background-img {
+  width: fit-content;
+}
+
+.contents {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  background-color: #171d25;
+  width: 940px;
+  height: 104px;
+  gap: 8px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#logo_holder {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.features_container {
+  display: flex;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+}
+
+.feature {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration-style: solid;
+  font-weight: bold;
+  color: #dcdedf;
+  font-family: "Motiva Sans", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($color: white, $amount: 20);
+  }
+}
+
+#global_action {
+  display: flex;
+  font-size: 11px;
+  margin-top: 7px;
+  margin-left: 20px;
+  gap: 10px;
+}
+
+.header_install_content {
+  height: 24px;
+  background-color: rgb(92, 126, 16);
+  background-image: url(https://store.akamai.steamstatic.com/public/shared/images/header/btn_header_installsteam_download.png?v=1);
+  background-position-x: 10px;
+  background-position-y: 5px;
+  background-repeat: no-repeat;
+  color: #e5e4dc;
+  font-family: "Motiva Sans", sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  margin: 0;
+  padding-left: 35px;
+  padding-right: 9px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color: rgb(92, 126, 16), $amount: 5);
+    transition: 0.4s;
+  }
+}
+
+.global_action_click {
+  color: rgb(184, 182, 180);
+  height: 24px;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($color: rgb(184, 182, 180), $amount: 20);
+  }
+}
+
+.global_action_link {
+  color: rgb(184, 182, 180);
+  height: 24px;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+}
+
+#page_content {
+  color: rgb(233, 233, 233);
+  width: 100%;
+  background-attachment: fixed;
+  background-clip: border-box;
+  background-color: rgb(24, 26, 33);
+  background-image: url(https://store.akamai.steamstatic.com/public/shared/images/joinsteam/new_login_bg_strong_mask.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: auto;
+  height: fit-content;
+}
+
+.login_page_container {
+  color: rgb(233, 233, 233);
+  display: flex;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+  height: 650px;
+}
+
+.login_container {
+  color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+}
+
+.newlogin_dialog {
+  color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  gap: 26px;
+}
+
+.newdialog_content {
+  color: rgb(233, 233, 233);
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.newlogindialog {
+  background-color: rgb(24, 26, 33);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color: rgb(233, 233, 233);
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  height: 290px;
+  width: 636px;
+  padding: 24px 32px 24px 32px;
+}
+
+.logindialog_sidebyside {
+  color: rgb(233, 233, 233);
+  display: flex;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding-top: 10px;
+  width: 650px;
+  height: 310px;
+  gap: 8px;
+}
+
+.loginForm {
+  display: grid;
+}
+
+.username_zone {
+  display: grid;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 60px;
+}
+
+.titleUser {
+  color: rgb(23, 153, 255);
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  width: 400px;
+  height: fit-content;
+}
+
+.inputslot_user {
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px;
+  background-color: #32353c;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid #32353c;
+  height: 18px;
+
+  &:hover {
+    background-color: lighten($color: rgb(50, 53, 60), $amount: 3);
+    border-color: lighten($color: rgb(50, 53, 60), $amount: 3);
+  }
+}
+
+.password_zone {
+  display: grid;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 60px;
+}
+
+.titlePassword {
+  color: #afafaf;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  width: 400px;
+  height: fit-content;
+}
+
+.inputslot_password {
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px;
+  background-color: #32353c;
+  outline: none;
+  font-size: 15px;
+  border: 1px solid #32353c;
+  height: 18px;
+
+  &:hover {
+    background-color: lighten($color: rgb(50, 53, 60), $amount: 3);
+    border-color: lighten($color: rgb(50, 53, 60), $amount: 3);
+  }
+}
+
+.submittedbutton {
+  position: relative;
+  background: linear-gradient(90deg, #06bfff 0%, #2d73ff 100%);
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: inherit;
+  text-align: center;
+  cursor: pointer;
+  width: 250px;
+
+  &:hover {
+    background: linear-gradient(90deg, #06bfff 25%, #2d73ff 100%);
+  }
+}
+
+.QR {
+  color: rgb(233, 233, 233);
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 230px;
+  margin-left: 20px;
+  border-radius: 2px;
+  align-items: center;
+}
+
+.focuscheck {
+  display: block;
+  height: 20px;
+}
+
+.checkBoxField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 20px;
+}
+
+.checkBox {
+  height: 16px;
+  width: 16px;
+  padding: 3px;
+  border-radius: 2px;
+  background-color: #32353c;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten($color: #32353c, $amount: 5);
+  }
+}
+
+.checkField_label {
+  color: #afafaf;
+  font-size: 12px;
+  user-select: none;
+  padding-left: 6px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50px;
+}
+
+.text_forgot {
+  text-align: center;
+  color: #afafaf;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: lighten($color: #afafaf, $amount: 10);
+  }
+}
+
+.QR_fieldLable {
+  color: #1999ff;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.QRholder {
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  width: 212px;
+  height: 212px;
+  background-color: white;
+  background-image: url(../assets/qrcode_84563247_75c5a20e87b446f583aa3b43561e8b67.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+}
+
+.QR_logindialog {
+  text-align: center;
+  font-size: 12px;
+  color: #afafaf;
+}
+
+.login-bottom-row {
+  display: flex;
+  padding-top: 65px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 152px;
+  justify-content: center;
+  background-color: #181a21;
+  gap: 60px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  height: fit-content;
+  gap: 5px;
+
+  .headline {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    font-family: "Motiva Sans", sans-serif;
+  }
+
+  .create {
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-family: "Motiva Sans", sans-serif;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-position: 25%;
+    background-size: 330% 100%;
+
+    &:hover {
+      background: linear-gradient(to right, #47bfff 5%, #1a44c2 100%);
+    }
+  }
+}
+
+.contents-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 300px;
+  height: fit-content;
+  font-family: "Motiva Sans", sans-serif;
+  font-size: 15px;
+  color: #b8b6b4;
+  line-height: 20px;
+}
