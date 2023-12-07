@@ -303,31 +303,74 @@
   height: 20px;
 }
 
-.checkBoxField {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 20px;
-}
-
-.checkBox {
-  height: 16px;
-  width: 16px;
-  padding: 3px;
-  border-radius: 2px;
-  background-color: #32353c;
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 28px;
   cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #afafaf;
 
-  &:hover {
-    background-color: lighten($color: #32353c, $amount: 5);
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #32353c;
+    border-radius: 2px;
   }
 }
 
-.checkField_label {
-  color: #afafaf;
-  font-size: 12px;
-  user-select: none;
-  padding-left: 6px;
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: lighten($color: #32353c, $amount: 5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #32353c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 0 2px 2px 2px;
 }
 
 .buttonContainer {
@@ -438,21 +481,21 @@
   line-height: 20px;
 }
 
-#know-more{
+#know-more {
   text-decoration: underline;
   text-underline-offset: 5px;
   cursor: pointer;
 }
 
-.certificate{
+.certificate {
   display: flex;
   width: 100%;
   height: 160px;
-  background-color: #181a21;  
+  background-color: #181a21;
   justify-content: center;
 }
 
-.certificate-contents{
+.certificate-contents {
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -460,6 +503,6 @@
   height: fit-content;
   align-items: center;
   font-size: 16px;
-  font-family:"Motiva Sans", sans-serif;
+  font-family: "Motiva Sans", sans-serif;
   border-top: 1px solid;
 }
