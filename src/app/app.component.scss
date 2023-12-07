@@ -1,4 +1,4 @@
-#global_header {
+#navbar {
   width: 100%;
   height: 105px;
   background-color: #171d25;
@@ -13,7 +13,6 @@
   margin: 0px auto;
   display: flex;
   justify-content: center;
-  background-color: #171d25;
   width: 940px;
   height: 104px;
   gap: 8px;
@@ -463,8 +462,4 @@
   font-size: 16px;
   font-family:"Motiva Sans", sans-serif;
   border-top: 1px solid;
-}
-
-#text-cer{
-  color: #b8b6b4;
 }
