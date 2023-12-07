@@ -2,13 +2,13 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-bottom-row-navbar',
   standalone: true,
   imports: [
     CommonModule,
   ],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss',
+  templateUrl: './bottom-row-navbar.component.html',
+  styleUrl: './bottom-row-navbar.component.scss',
   changeDetection: ChangeDetectionStrategy.Default,
 })
-export class NavbarComponent { }
+export class BottomRowNavbarComponent { }
