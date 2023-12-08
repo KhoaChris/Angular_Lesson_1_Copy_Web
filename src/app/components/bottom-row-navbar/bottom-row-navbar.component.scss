@@ -40,10 +40,14 @@
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     background-position: 25%;
     background-size: 330% 100%;
+    color: white;
+    text-decoration: none;
 
     &:hover {
       background: linear-gradient(to right, #47bfff 5%, #1a44c2 100%);
     }
+
+
   }
 }
 
